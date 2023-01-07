@@ -15,12 +15,6 @@
         android:layout_weight="6"
         android:background="#8A2BE2">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logoHomepage">
-        </ImageView>
-
     </LinearLayout>
 
     <LinearLayout
@@ -44,6 +38,7 @@
             >
         </TextView>
         <Button
+            android:id="@+id/loginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Intră în cont"
@@ -51,7 +46,6 @@
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
             android:textSize="16dp"
-            android:textFontWeight=""
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:backgroundTint="#8A2BE2">

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo2">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creează un cont nou"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:text="utilizator:"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="248dp"></TextView>
+
+        <EditText
+            android:hint="utilizator1"
+            android:id="@+id/utilizator"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/simple_border"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/black"
+            ></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="parolă:"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="248dp"
+            >
+        </TextView>
+
+        <EditText
+            android:hint="parola"
+            android:id="@+id/parola"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/simple_border"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/black"
+            >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="248dp"
+            >
+        </TextView>
+
+        <EditText
+            android:hint="name_surname@domain.com"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/simple_border"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/black"
+            >
+        </EditText>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="140dp"
+            android:text="Creează"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

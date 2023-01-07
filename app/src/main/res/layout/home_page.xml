@@ -14,7 +14,11 @@
         android:layout_height="0dp"
         android:layout_weight="6"
         android:background="#8A2BE2">
-
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo2">
+        </ImageView>
     </LinearLayout>
 
     <LinearLayout
@@ -51,6 +55,7 @@
             android:backgroundTint="#8A2BE2">
         </Button>
         <TextView
+            android:id="@+id/signupTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Category">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selectează categoria"
+        android:textColor="#8A2BE2"
+        android:textStyle="bold"
+        android:textSize="33dp"
+        android:layout_marginBottom="40dp"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="62dp"
+
+        />
+
+    <android.widget.Button
+        android:background="@drawable/category_border"
+        android:id="@+id/drumuributton"
+        android:layout_width="260dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="30dp"
+        android:text="Drumuri"
+        android:textColor="@color/black"
+        android:textSize="27dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <android.widget.Button
+        android:background="@drawable/category_border"
+        android:id="@+id/iluminarebutton"
+        android:layout_width="260dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="65dp"
+        android:text="Iluminare"
+        android:textColor="@color/black"
+        android:textSize="27dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <android.widget.Button
+        android:background="@drawable/category_border"
+        android:id="@+id/altelebutton"
+        android:layout_width="260dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="65dp"
+        android:text="Altele"
+        android:textColor="@color/black"
+        android:textSize="27dp"
+        android:fontFamily="sans-serif-black"
+        />
+</LinearLayout>

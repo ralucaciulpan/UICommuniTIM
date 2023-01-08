@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Category">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selectează problema"
+        android:textColor="#8A2BE2"
+        android:textStyle="bold"
+        android:textSize="33dp"
+        android:layout_marginBottom="35dp"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="62dp"
+        />
+
+    <RadioGroup
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        >
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Groapă"
+        android:buttonTint="#8a2be2"
+        />
+
+    <RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Marcaj rutier șters"
+        android:buttonTint="#8a2be2"/>
+
+    <RadioButton
+        android:id="@+id/radio3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Marcaj rutier eronat"
+        android:buttonTint="#8a2be2"/>
+
+    <RadioButton
+        android:id="@+id/radio4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Semafor nefuncțional"
+        android:buttonTint="#8a2be2"/>
+
+    <RadioButton
+        android:id="@+id/radio5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Indicator rutier deteriorat"
+        android:buttonTint="#8a2be2"/>
+
+    </RadioGroup>
+
+
+    <android.widget.Button
+        android:background="@drawable/simple_border"
+        android:backgroundTint="#8a2be2"
+        android:id="@+id/nextbutton"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="înainte"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="27dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+</LinearLayout>

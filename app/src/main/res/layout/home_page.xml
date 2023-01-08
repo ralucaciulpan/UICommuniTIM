@@ -51,15 +51,15 @@
             android:fontFamily="sans-serif-black"
             android:textSize="16dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:backgroundTint="#000000">
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#8A2BE2">
         </Button>
         <TextView
             android:id="@+id/signupTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="20dp"
             android:text="Nu ai cont încă? Creează unul!"
             android:textStyle="bold"
             android:textColor="#8A2BE2"

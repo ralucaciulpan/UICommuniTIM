@@ -17,6 +17,8 @@
               android:layout_weight="1"
               android:orientation="vertical">
             <ImageView
+                android:id="@+id/addIcon"
+                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="6"
@@ -24,9 +26,11 @@
                 android:layout_margin="40dp">
             </ImageView>
             <TextView
+                android:id="@+id/addText"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:text="Raportează o problemă"
                 android:textSize="15sp"
                 android:layout_gravity="center"
@@ -147,6 +151,7 @@
             android:layout_width="0dp"
             android:orientation="vertical">
             <ImageView
+                android:id="@+id/logoutIcon"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="6"
@@ -159,6 +164,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:id="@+id/logoutText"
                 android:text="Ieși din cont"
                 android:textSize="15sp"
                 android:layout_gravity="center"

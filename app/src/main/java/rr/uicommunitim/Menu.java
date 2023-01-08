@@ -1,7 +1,6 @@
 package rr.uicommunitim;
 
 import androidx.appcompat.app.AppCompatActivity;
-<<<<<<< HEAD
 
 import android.content.Intent;
 import android.media.Image;
@@ -9,9 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-=======
-import android.os.Bundle;
->>>>>>> 7cc79f4dbb5437adbe25bb97f19a34c1122a1b76
 
 public class Menu extends AppCompatActivity {
 

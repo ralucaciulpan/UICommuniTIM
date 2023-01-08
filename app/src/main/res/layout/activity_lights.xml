@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Lights">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selectează problema"
+        android:textColor="#8A2BE2"
+        android:textStyle="bold"
+        android:textSize="33dp"
+        android:layout_marginBottom="35dp"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="62dp"
+        />
+
+    <RadioGroup
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radio6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:text="Lampă de iluminare nefuncțională"
+            android:buttonTint="#8a2be2"
+            />
+
+        <RadioButton
+            android:id="@+id/radio7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:text="Lampă de iluminare deteriorată"
+            android:buttonTint="#8a2be2"/>
+
+        <RadioButton
+            android:id="@+id/radio8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:text="Lampă de iluminare care funcționează eronat"
+            android:buttonTint="#8a2be2"/>
+
+        <RadioButton
+            android:id="@+id/radio9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:text="Necesitatea amplasării unei lumini"
+            android:buttonTint="#8a2be2"/>
+
+        <RadioButton
+            android:id="@+id/radio10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:text="Fire de curent căzute"
+            android:buttonTint="#8a2be2"/>
+
+    </RadioGroup>
+
+
+    <android.widget.Button
+        android:background="@drawable/simple_border"
+        android:backgroundTint="#8a2be2"
+        android:id="@+id/nextbutton2"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="înainte"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="27dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+</LinearLayout>

@@ -11,6 +11,7 @@ public class Category extends AppCompatActivity {
 
     Button drumuriButton;
     Button iluminareButton;
+    Button alteleButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class Category extends AppCompatActivity {
         getSupportActionBar().hide();
         drumuriButton = findViewById(R.id.drumuributton);
         iluminareButton = findViewById(R.id.iluminarebutton);
+        alteleButton = findViewById(R.id.altelebutton);
 
         drumuriButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +33,13 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Category.this, Lights.class));
+            }
+        });
+
+        alteleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Category.this, Other.class));
             }
         });
     }

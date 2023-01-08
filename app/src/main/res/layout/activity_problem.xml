@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Category">
+    tools:context=".Problem">
 
     <TextView
         android:id="@+id/textView"

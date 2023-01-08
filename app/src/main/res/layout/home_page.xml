@@ -52,7 +52,7 @@
             android:textSize="16dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:backgroundTint="#8A2BE2">
+            android:backgroundTint="#000000">
         </Button>
         <TextView
             android:id="@+id/signupTextView"

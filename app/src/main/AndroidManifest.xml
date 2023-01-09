@@ -44,6 +44,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ProblemOverview"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Photo"
             android:exported="false">
             <meta-data

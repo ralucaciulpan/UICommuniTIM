@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProblemOverview"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="70dp"
+        android:text="A fost raportat/ă cu succes"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/addTextProblema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="o problema mare fuarte mare si grava raw de tot"
+        android:textSize="22dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:textColor="#8a2be2"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="la adresa selectată anterior."
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingTop="2dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="O fotografie ne-ar ajuta să înțelegem mai bine natura problemei:"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:textColor="#8a2be2"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/photoImageView">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/photoButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Fă o poză">
+
+        </Button>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:text="Înainte">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>

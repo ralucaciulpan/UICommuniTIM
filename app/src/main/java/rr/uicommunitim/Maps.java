@@ -12,6 +12,8 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.Build;
@@ -33,7 +35,9 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.Locale;
 
 import rr.uicommunitim.databinding.ActivityMapsBinding;
 
@@ -41,6 +45,7 @@ public class Maps extends FragmentActivity implements OnMapReadyCallback {
 
     String categorie;
     String subcategorie;
+    String address;
     private GoogleMap mGoogleMap;
     LocationRequest mLocationRequest;
     Location mLastLocation;
@@ -122,7 +127,21 @@ public void onMapReady(GoogleMap googleMap) {
     mGoogleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
         @Override
         public boolean onMarkerClick(@NonNull Marker marker) {
-            startActivity(new Intent(Maps.this,ProblemOverview.class));
+            Geocoder geocoder;
+            List<Address> addresses;
+            LatLng ll = marker.getPosition();
+            geocoder = new Geocoder(Maps.this, Locale.getDefault());
+            try {
+                addresses = geocoder.getFromLocation(ll.latitude,ll.longitude,1);
+                address=addresses.get(0).getAddressLine(0);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Intent i = new Intent(Maps.this,ProblemOverview.class);
+            i.putExtra("categorie",categorie);
+            i.putExtra("subcategorie",subcategorie);
+            i.putExtra("adresa",address);
+            startActivity(i);
             return true;
         }
     });

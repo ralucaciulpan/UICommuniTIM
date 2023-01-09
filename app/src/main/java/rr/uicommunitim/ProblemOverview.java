@@ -20,17 +20,33 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ProblemOverview extends AppCompatActivity {
     Button photoButton;
     ImageView photoImageView;
+    TextView adresaView,problemaView;
+    String categorie;
+    String subcategorie;
+    String address;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_problem_overview);
         photoButton = findViewById(R.id.photoButton);
         photoImageView = findViewById(R.id.photoImageView);
+        problemaView=findViewById(R.id.addTextProblema);
+        adresaView=findViewById(R.id.addTextAdresa);
+        Bundle extras = getIntent().getExtras();
+        if(extras!=null){
+            categorie = extras.getString("categorie");
+            subcategorie = extras.getString("subcategorie");
+            address = extras.getString("adresa");
+            System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n\n"+ categorie+"\n"+subcategorie+"\n"+address + "\n\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            problemaView.setText(subcategorie);
+            adresaView.setText(address);
+        }
         photoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

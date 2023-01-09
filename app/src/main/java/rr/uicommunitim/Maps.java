@@ -10,6 +10,7 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -108,6 +109,13 @@ public void onMapReady(GoogleMap googleMap) {
             mGoogleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
             mGoogleMap.clear();
             mGoogleMap.addMarker(markerOptions);
+        }
+    });
+    mGoogleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+        @Override
+        public boolean onMarkerClick(@NonNull Marker marker) {
+            startActivity(new Intent(Maps.this,Menu.class));
+            return true;
         }
     });
 }

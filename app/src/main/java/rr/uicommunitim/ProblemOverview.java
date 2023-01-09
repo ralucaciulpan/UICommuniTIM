@@ -23,6 +23,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class ProblemOverview extends AppCompatActivity {
     Button photoButton;
     ImageView photoImageView;
@@ -30,6 +38,9 @@ public class ProblemOverview extends AppCompatActivity {
     String categorie;
     String subcategorie;
     String address;
+    Button nextButton;
+    double latitude;
+    double longitude;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +49,7 @@ public class ProblemOverview extends AppCompatActivity {
         photoImageView = findViewById(R.id.photoImageView);
         problemaView=findViewById(R.id.addTextProblema);
         adresaView=findViewById(R.id.addTextAdresa);
+        nextButton = findViewById(R.id.nextButton);
         Bundle extras = getIntent().getExtras();
         if(extras!=null){
             categorie = extras.getString("categorie");
@@ -46,6 +58,8 @@ public class ProblemOverview extends AppCompatActivity {
             System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n\n"+ categorie+"\n"+subcategorie+"\n"+address + "\n\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
             problemaView.setText(subcategorie);
             adresaView.setText(address);
+            latitude=extras.getDouble("latitude");
+            longitude=extras.getDouble("longitude");
         }
         photoButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +67,40 @@ public class ProblemOverview extends AppCompatActivity {
                 askForCameraPermission();
             }
         });
+        nextButton.setOnClickListener(View -> {
+            addProblem();
+        });
+
+    }
+
+    private void addProblem() {
+        String url = "http://10.0.2.2:8080/problems/add";
+        JSONObject js = new JSONObject();
+        try {
+            js.put("category",categorie);
+            js.put("subcategory",subcategorie);
+            js.put("longitude",longitude);
+            js.put("latitude",latitude);
+            System.out.println(js);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        JsonEmptyRequest jsonEmptyRequest = new JsonEmptyRequest
+                (Request.Method.POST, url, js, new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        System.out.println("Response: " + response.toString());
+                        //startActivity(new Intent(Login.this,Menu.class));
+                    }
+                }, new Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // TODO: Handle error
+                        Toast.makeText(ProblemOverview.this, "login failed", Toast.LENGTH_SHORT).show();
+                    }
+                });
+        Volley.newRequestQueue(this).add(jsonEmptyRequest);
     }
 
     private void askForCameraPermission() {

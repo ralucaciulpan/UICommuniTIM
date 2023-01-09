@@ -141,6 +141,8 @@ public void onMapReady(GoogleMap googleMap) {
             i.putExtra("categorie",categorie);
             i.putExtra("subcategorie",subcategorie);
             i.putExtra("adresa",address);
+            i.putExtra("latitude",ll.latitude);
+            i.putExtra("longitude",ll.longitude);
             startActivity(i);
             return true;
         }

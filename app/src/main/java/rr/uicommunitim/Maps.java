@@ -114,7 +114,7 @@ public void onMapReady(GoogleMap googleMap) {
     mGoogleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
         @Override
         public boolean onMarkerClick(@NonNull Marker marker) {
-            startActivity(new Intent(Maps.this,Menu.class));
+            startActivity(new Intent(Maps.this,ProblemOverview.class));
             return true;
         }
     });

@@ -39,6 +39,8 @@ import rr.uicommunitim.databinding.ActivityMapsBinding;
 
 public class Maps extends FragmentActivity implements OnMapReadyCallback {
 
+    String categorie;
+    String subcategorie;
     private GoogleMap mGoogleMap;
     LocationRequest mLocationRequest;
     Location mLastLocation;
@@ -48,6 +50,12 @@ public class Maps extends FragmentActivity implements OnMapReadyCallback {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        Bundle extras = getIntent().getExtras();
+        if(extras!=null){
+            categorie = extras.getString("categorie");
+            subcategorie = extras.getString("subcategorie");
+            Toast.makeText(this, categorie+"\n"+subcategorie, Toast.LENGTH_SHORT).show();
+        }
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()

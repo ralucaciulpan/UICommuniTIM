@@ -25,21 +25,27 @@ public class Category extends AppCompatActivity {
         drumuriButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Category.this, Problem.class));
+                Intent i = new Intent(Category.this,Problem.class);
+                i.putExtra("categorie",drumuriButton.getText());
+                startActivity(i);
             }
         });
 
         iluminareButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Category.this, Lights.class));
+                Intent i = new Intent(Category.this,Lights.class);
+                i.putExtra("categorie",iluminareButton.getText());
+                startActivity(i);
             }
         });
 
         alteleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Category.this, Other.class));
+                Intent i = new Intent(Category.this,Other.class);
+                i.putExtra("categorie",alteleButton.getText());
+                startActivity(i);
             }
         });
     }

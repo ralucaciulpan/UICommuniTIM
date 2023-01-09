@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UICommuniTIM</string>
+    <string name="title_activity_maps">Maps</string>
 </resources>

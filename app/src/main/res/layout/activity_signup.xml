@@ -57,7 +57,7 @@
 
         <EditText
             android:hint="utilizator1"
-            android:id="@+id/utilizator"
+            android:id="@+id/utilizatorSignup"
             android:layout_width="match_parent"
             android:layout_height="37dp"
             android:layout_marginLeft="30dp"
@@ -86,7 +86,7 @@
 
         <EditText
             android:hint="parola"
-            android:id="@+id/parola"
+            android:id="@+id/parolaSignup"
             android:layout_width="match_parent"
             android:layout_height="37dp"
             android:ems="10"
@@ -118,7 +118,7 @@
 
         <EditText
             android:hint="name_surname@domain.com"
-            android:id="@+id/email"
+            android:id="@+id/emailSignup"
             android:layout_width="match_parent"
             android:layout_height="37dp"
             android:ems="10"

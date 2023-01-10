@@ -7,10 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".Menu"
     android:orientation="vertical">
-      <TableRow
-          android:layout_width="match_parent"
-          android:layout_height="0dp"
-          android:layout_weight="1">
           <LinearLayout
               android:layout_height="match_parent"
               android:layout_width="0dp"
@@ -36,91 +32,10 @@
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-black"
                 android:textStyle="bold"
-                android:textColor="@color/black">
+                android:textColor="@color/black"
+                android:layout_marginTop="-25dp">
             </TextView>
           </LinearLayout>
-          <LinearLayout
-              android:layout_weight="1"
-              android:layout_height="match_parent"
-              android:layout_width="0dp"
-              android:orientation="vertical">
-              <ImageView
-                  android:layout_width="match_parent"
-                  android:layout_height="0dp"
-                  android:layout_weight="6"
-                  android:src="@drawable/settings"
-                  android:layout_margin="40dp">>
-              </ImageView>
-              <TextView
-                  android:layout_width="wrap_content"
-                  android:layout_height="0dp"
-                  android:layout_weight="1"
-                  android:text="Setările contului"
-                  android:textSize="15sp"
-                  android:layout_gravity="center"
-                  android:fontFamily="sans-serif-black"
-                  android:textStyle="bold"
-                  android:textColor="@color/black">
-              </TextView>
-          </LinearLayout>
-      </TableRow>
-      <TableRow
-          android:layout_width="match_parent"
-          android:layout_height="0dp"
-          android:layout_weight="1">
-        <LinearLayout
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="6"
-                android:src="@drawable/road"
-                android:layout_margin="40dp">>
-            </ImageView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="Probleme cu străzile"
-                android:textSize="15sp"
-                android:layout_gravity="center"
-                android:fontFamily="sans-serif-black"
-                android:textStyle="bold"
-                android:textColor="@color/black">
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="6"
-                android:src="@drawable/streetlamp"
-                android:layout_margin="40dp">>
-            </ImageView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="Probleme cu iluminatul"
-                android:textSize="15sp"
-                android:layout_gravity="center"
-                android:fontFamily="sans-serif-black"
-                android:textStyle="bold"
-                android:textColor="@color/black">
-            </TextView>
-        </LinearLayout>
-      </TableRow>
-      <TableRow
-          android:layout_width="match_parent"
-          android:layout_height="0dp"
-          android:layout_weight="1">
         <LinearLayout
             android:layout_height="match_parent"
             android:layout_width="0dp"
@@ -131,19 +46,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="6"
-                android:src="@drawable/dots"
-                android:layout_margin="40dp">>
+                android:src="@drawable/danger"
+                android:layout_margin="40dp">
             </ImageView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Alte probleme"
+                android:text="Vezi probleme existente"
                 android:textSize="15sp"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-black"
                 android:textStyle="bold"
-                android:textColor="@color/black">
+                android:textColor="@color/black"
+                android:layout_marginTop="-25dp">
             </TextView>
         </LinearLayout>
         <LinearLayout
@@ -172,9 +88,9 @@
                 android:fontFamily="sans-serif-black"
                 android:textStyle="bold"
                 android:textColor="@color/black"
+                android:layout_marginTop="-25dp"
                 >
             </TextView>
         </LinearLayout>
-      </TableRow>
 
 </TableLayout>

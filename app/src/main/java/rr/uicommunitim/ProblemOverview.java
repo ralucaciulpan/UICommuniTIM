@@ -45,6 +45,7 @@ public class ProblemOverview extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_problem_overview);
+        getSupportActionBar().hide();
         photoButton = findViewById(R.id.photoButton);
         photoImageView = findViewById(R.id.photoImageView);
         problemaView=findViewById(R.id.addTextProblema);
@@ -70,6 +71,7 @@ public class ProblemOverview extends AppCompatActivity {
         });
         nextButton.setOnClickListener(View -> {
             addProblem();
+            startActivity(new Intent(ProblemOverview.this,Final.class));
         });
 
     }

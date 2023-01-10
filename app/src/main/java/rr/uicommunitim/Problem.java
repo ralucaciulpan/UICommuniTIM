@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -39,6 +40,14 @@ public class Problem extends AppCompatActivity {
                 i.putExtra("categorie",categorie);
                 i.putExtra("subcategorie", radioButton.getText());
                 startActivity(i);
+            }
+        });
+
+        ImageView logo = findViewById(R.id.logo);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Problem.this,Menu.class));
             }
         });
     }

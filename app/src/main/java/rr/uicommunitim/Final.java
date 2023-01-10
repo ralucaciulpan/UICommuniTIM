@@ -14,6 +14,7 @@ public class Final extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final);
+        getSupportActionBar().hide();
         logo = findViewById(R.id.logo);
         logo.setOnClickListener(new View.OnClickListener() {
             @Override

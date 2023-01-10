@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class Category extends AppCompatActivity {
 
@@ -46,6 +47,14 @@ public class Category extends AppCompatActivity {
                 Intent i = new Intent(Category.this,Other.class);
                 i.putExtra("categorie",alteleButton.getText());
                 startActivity(i);
+            }
+        });
+
+        ImageView logo = findViewById(R.id.logo);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Category.this,Menu.class));
             }
         });
     }

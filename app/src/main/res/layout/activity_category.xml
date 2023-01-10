@@ -8,6 +8,14 @@
     android:orientation="vertical"
     tools:context=".Category">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/logo_mare"
+        android:layout_marginBottom="30dp"/>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -52,6 +60,7 @@
         android:layout_width="260dp"
         android:layout_height="90dp"
         android:layout_marginTop="65dp"
+        android:layout_marginBottom="100dp"
         android:text="Altele"
         android:textColor="@color/black"
         android:textSize="27dp"

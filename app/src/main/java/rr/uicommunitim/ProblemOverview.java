@@ -58,6 +58,7 @@ public class ProblemOverview extends AppCompatActivity {
             System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n\n"+ categorie+"\n"+subcategorie+"\n"+address + "\n\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
             problemaView.setText(subcategorie);
             adresaView.setText(address);
+            System.out.println("@@@@@@@@@@    " + address + "     @@@@@@@@@@@@@@@@");
             latitude=extras.getDouble("latitude");
             longitude=extras.getDouble("longitude");
         }

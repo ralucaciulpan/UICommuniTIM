@@ -133,6 +133,7 @@ public void onMapReady(GoogleMap googleMap) {
             geocoder = new Geocoder(Maps.this, Locale.getDefault());
             try {
                 addresses = geocoder.getFromLocation(ll.latitude,ll.longitude,1);
+                System.out.println(addresses);
                 address=addresses.get(0).getAddressLine(0);
             } catch (IOException e) {
                 e.printStackTrace();

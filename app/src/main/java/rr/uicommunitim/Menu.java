@@ -16,13 +16,20 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         getSupportActionBar().hide();
-
         ImageView AddImageView = findViewById(R.id.addIcon);
         TextView AddTextView = findViewById(R.id.addText);
 
         ImageView LogoutImageView = findViewById(R.id.logoutIcon);
         TextView LogoutTextView = findViewById(R.id.logoutText);
 
+        ImageView seeProblemsImageView = findViewById(R.id.problems);
+
+        seeProblemsImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Menu.this,ViewProblems.class));
+            }
+        });
         AddImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

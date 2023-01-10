@@ -8,6 +8,14 @@
     android:orientation="vertical"
     tools:context=".Other">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/logo_mare"
+        android:layout_marginBottom="30dp"/>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -83,6 +91,7 @@
         android:textColor="@color/black"
         android:textSize="27dp"
         android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="40dp"
         />
 
 </LinearLayout>

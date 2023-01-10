@@ -8,6 +8,14 @@
     android:orientation="vertical"
     tools:context=".Problem">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/logo_mare" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -78,6 +86,7 @@
         android:layout_width="160dp"
         android:layout_height="60dp"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
         android:text="înainte"
         android:textAllCaps="false"
         android:textColor="@color/black"

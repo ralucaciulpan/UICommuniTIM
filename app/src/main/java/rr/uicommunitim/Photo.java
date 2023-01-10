@@ -33,6 +33,7 @@ public class Photo extends AppCompatActivity {
         setContentView(R.layout.activity_photo);
         photoButton = findViewById(R.id.photoButton);
         photoImageView = findViewById(R.id.photoImageView);
+        getSupportActionBar().hide();
 
         photoButton.setOnClickListener(new View.OnClickListener() {
             @Override

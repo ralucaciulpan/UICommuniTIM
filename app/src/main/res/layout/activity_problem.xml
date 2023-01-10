@@ -24,6 +24,7 @@
     <RadioGroup
         android:layout_width="300dp"
         android:layout_height="400dp"
+        android:id="@+id/radioGroup"
         >
 
     <RadioButton
